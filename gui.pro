@@ -30,7 +30,7 @@ SOURCES += main.cpp\
 HEADERS  += mainwindow.h \
     ntv2qtpreview.h
 
-NTV2_SDK_PATH = /Users/markmniece/Projects/Votis/ntv2sdklinux_13.1.0.1
+NTV2_SDK_PATH = /Users/markmniece/Projects/Votis/ntv2sdkmac_13.0.0.11
 
 LIBS += $$NTV2_SDK_PATH/lib
 
