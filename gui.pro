@@ -4,7 +4,7 @@
 #
 #-------------------------------------------------
 
-QT       += core gui
+QT += core multimedia widgets gui
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
@@ -28,5 +28,9 @@ SOURCES += main.cpp\
 
 HEADERS  += mainwindow.h \
     ntv2qtpreview.h
+
+LIBS += /Users/markmniece/Documents/Votis/Server Software/ntv2sdkmac_13.0.0.79b79
+
+INCLUDEPATH += /Users/markmniece/Documents/Votis/Server Software/ntv2sdkmac_13.0.0.79b79/ajalibraries/ajantv2
 
 FORMS    += mainwindow.ui
