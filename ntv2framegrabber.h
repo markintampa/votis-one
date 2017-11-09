@@ -15,7 +15,8 @@
 	#include <QtGui>
 #endif
 #include <QThread>
-#include <QtMultimedia>
+#include <QAudioOutput>
+#include <QAudioFormat>
 #include "ntv2card.h"
 #include "ntv2enums.h"
 #include "ntv2task.h"
