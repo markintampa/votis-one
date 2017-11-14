@@ -1,22 +1,22 @@
 #include "mainwindow.h"
 #include <QApplication>
+#include "ntv2qtpreview.h"
 
-int main(int argc, char *argv[])
+#include <QtCore>
+#if (QT_VERSION >= QT_VERSION_CHECK(5, 0, 0))
+    #include <QtWidgets>
+#else
+    #include <QtGui>
+#endif
+
+int main (int argc, char * argv [])
 {
-    QApplication a(argc, argv);
-    MainWindow w;
+    QApplication	app (argc, argv);
+    NTV2QtPreview	window;
 
+    window.setWindowTitle ("NTV2 Qt Preview");
+    window.show ();
 
+    return app.exec ();
 
-    /*QGraphicsView* w = new QGraphicsView();
-    QGraphicsScene *scn = new QGraphicsScene( w );
-    scn->setSceneRect( w->rect() );
-    w->setScene( scn );
-    w->setFixedSize( 400, 400 );
-    QPixmap pix( "c:\\pix_jpg.jpg" );
-    scn->addPixmap( pix );*/
-
-    w.show();
-
-    return a.exec();
 }
