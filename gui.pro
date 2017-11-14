@@ -15,7 +15,7 @@ TEMPLATE = app
 # any feature of Qt which as been marked as deprecated (the exact warnings
 # depend on your compiler). Please consult the documentation of the
 # deprecated API in order to know how to port your code away from it.
-DEFINES += QT_DEPRECATED_WARNINGS AJAMac
+DEFINES += QT_DEPRECATED_WARNINGS AJALinux
 
 # You can also make your code fail to compile if you use deprecated APIs.
 # In order to do so, uncomment the following line.
@@ -30,12 +30,12 @@ SOURCES += main.cpp\
 HEADERS  += mainwindow.h \
     ntv2qtpreview.h
 
-NTV2_SDK_PATH = /Users/markmniece/Projects/Votis/ntv2sdkmac_13.0.0.11
+NTV2_SDK_PATH=/home/mark/ntv2sdklinux_13.1.0.1
 
 LIBS += $$NTV2_SDK_PATH/lib
 
 INCLUDEPATH += $$NTV2_SDK_PATH/ajalibraries/ajantv2/includes\
-               $$NTV2_SDK_PATH/ajalibraries/ajantv2/src/mac\
+               $$NTV2_SDK_PATH/ajalibraries/ajantv2/src/lin\
                $$NTV2_SDK_PATH/ajalibraries/
 
 FORMS    += mainwindow.ui
